@@ -15,5 +15,5 @@
 homepage: "https://ninetailed.io"
 documentation: "https://docs.ninetailed.io"
 versions:
-  - sha: 1fe547544648ddb18fd12ba0581524c9de17c249
+  - sha: 21b29a4f2487a4cefafdb02c35509d24b8f90e20
     changeNotes: Initial Version
