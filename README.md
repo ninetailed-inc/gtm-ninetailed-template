@@ -2,7 +2,7 @@
 A Google Tag Manager customer template for firing Ninetailed API calls.
 
 ## Details
-This template lets you fire either a `track` or `identify` call to the Ninetails endpoint.
+This template lets you fire either a `track` or `identify` call to the Ninetailed endpoint.
 
 ## Usage
 Documentation for setup and usage is available on [docs.ninetailed.io](https://docs.ninetailed.io/integrations/getting-started).
