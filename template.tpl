@@ -2,7 +2,7 @@
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
-https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+https: //developers.google.com/tag-manager/gallery-tos (or such other URL as
 Google may provide), as modified from time to time.
 
 
@@ -11,7 +11,7 @@ ___INFO___
 {
   "type": "TAG",
   "id": "cvt_temp_public_id",
-  "version": 1,
+  "version": 2,
   "securityGroups": [],
   "displayName": "Ninetailed",
   "brand": {
@@ -49,33 +49,7 @@ ___TEMPLATE_PARAMETERS___
       }
     ],
     "simpleValueType": true,
-    "help": "Select which Segment API call you want to make."
-  },
-  {
-    "type": "SELECT",
-    "name": "useObjectAction",
-    "displayName": "Use object action",
-    "macrosInSelect": false,
-    "selectItems": [
-      {
-        "value": true,
-        "displayValue": "True"
-      },
-      {
-        "value": false,
-        "displayValue": "False"
-      }
-    ],
-    "simpleValueType": true,
-    "enablingConditions": [
-      {
-        "paramName": "call",
-        "paramValue": "track",
-        "type": "EQUALS"
-      }
-    ],
-    "defaultValue": true,
-    "help": "Select whether or not you are using the Object-Action framework as a naming convention. If selected, enter separate Object and Action values to create the track call\u0027s event name. The Object and Action will also be included as seperate properties in the track call."
+    "help": "Select which Ninetailed event you want to send."
   },
   {
     "type": "SELECT",
@@ -97,39 +71,6 @@ ___TEMPLATE_PARAMETERS___
     "name": "event",
     "displayName": "Event",
     "simpleValueType": true,
-    "enablingConditions": [
-      {
-        "paramName": "useObjectAction",
-        "paramValue": false,
-        "type": "EQUALS"
-      }
-    ]
-  },
-  {
-    "type": "TEXT",
-    "name": "object",
-    "displayName": "Object",
-    "simpleValueType": true,
-    "enablingConditions": [
-      {
-        "paramName": "useObjectAction",
-        "paramValue": true,
-        "type": "EQUALS"
-      }
-    ]
-  },
-  {
-    "type": "TEXT",
-    "name": "action",
-    "displayName": "Action",
-    "simpleValueType": true,
-    "enablingConditions": [
-      {
-        "paramName": "useObjectAction",
-        "paramValue": true,
-        "type": "EQUALS"
-      }
-    ]
   },
   {
     "type": "SIMPLE_TABLE",
@@ -179,12 +120,6 @@ if (customProperties){
 }
 if (call === "track"){
   let event = data.event;
-  if (data.useObjectAction){
-    event = data.object + " " + data.action;
-    properties.category = data.object;
-    properties.object = data.object;
-    properties.action = data.action;
-  }
   callInWindow('ninetailed.track', event, properties);
 }
 if (call === "identify"){

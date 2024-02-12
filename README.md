@@ -20,3 +20,4 @@ Documentation for setup and usage is available on [docs.ninetailed.io](https://d
 | Date | Notes |
 |------|-------|
 | 25 August 2022 | First version of the template released. |
+| 12 February 2024 | Remove object-action support. |
