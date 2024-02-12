@@ -16,7 +16,7 @@ homepage: "https://ninetailed.io"
 documentation: "https://docs.ninetailed.io"
 versions:
   # Latest version
-  - sha: XXX
+  - sha: 3768acb9870c65d92c771b92ab97c2a86e2b0547
     changeNotes: Remove object-action support
   # Older versions
   - sha: 21b29a4f2487a4cefafdb02c35509d24b8f90e20
