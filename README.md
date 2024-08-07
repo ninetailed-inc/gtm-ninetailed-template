@@ -19,5 +19,6 @@ Documentation for setup and usage is available on [docs.ninetailed.io](https://d
 ## Release notes
 | Date | Notes |
 |------|-------|
-| 25 August 2022 | First version of the template released. |
+| 07 August 2024 | Change userID to text field. Improve field descriptions. Prevent empty event name. Add debug logs. Add tests. |
 | 12 February 2024 | Remove object-action support. |
+| 25 August 2022 | First version of the template released. |
